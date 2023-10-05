@@ -3,6 +3,7 @@
 /**
  * main - A function that prints a text on the std output
  * Description: It uses puts instead of printf
+ * Return: returns 0 to exit
  */
 int main(void)
 {
