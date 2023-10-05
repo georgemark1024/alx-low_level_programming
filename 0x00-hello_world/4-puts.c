@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-/** A function that prints a text on the std output
- * It uses puts instead of printf
+/**
+ * main - A function that prints a text on the std output
+ * Description: It uses puts instead of printf
  */
 int main(void)
 {
