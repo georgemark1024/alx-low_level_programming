@@ -1,6 +1,10 @@
 #include<stdio.h>
 
-/* prints the size of various types depending on the computer */
+/*
+ * main - prints the size of various types depending on the computer
+ * Description: It calculates the size in bytes on different data types
+ * Return: returns 0 to exit
+ */
 int main(void)
 {
 	printf("Size of a char: %d" sizeof(char) "bytes(s)")
@@ -8,3 +12,4 @@ int main(void)
 	printf("Size of a long int: %d"(long int)sizeof(int) "bytes(s)")
 	printf("Size of a long long: %d" (long long int)sizeof(int) "bytes(s)")
 	printf("Size of a float: %d" sizeof(float) "bytes(s)")
+}
