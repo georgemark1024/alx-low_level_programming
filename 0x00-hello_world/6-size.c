@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-/*
- * main - prints the size of various types depending on the computer
+/**
+ * main - Size calculator
  *
  * Description: It calculates the size in bytes on different data types
  *
