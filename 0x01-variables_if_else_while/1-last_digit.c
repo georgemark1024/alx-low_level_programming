@@ -1,5 +1,6 @@
 #include<stdlib.h>
 #include<time.h>
+#include<stdio.h>
 
 /**
  * main - Assigns a random number to n and shows it state
@@ -11,8 +12,8 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rant() - RAND_MAX /2;
-	printf("Last digit of %n is");
+	n = rand() - RAND_MAX /2;
+	printf("Last digit of %d is", n);
 	if (n > 5)
 		printf(" and is greater than 5\n")
 	else if (n < 6 && n > 0)
