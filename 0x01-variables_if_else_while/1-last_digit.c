@@ -4,7 +4,7 @@
 
 /**
  * main - Assigns a random number to n and shows it state
- * <Down>
+ *
  * Documentation: It uses the if else if looops
  * to run comparison tests and prints relevant output
  * depending on the conditions passed
@@ -14,10 +14,11 @@
 int main(void)
 {
 	int n;
+	int last_num;
 
 	srand(time(0));
 	n = rand() - RAND_MAX /2;
-	int last_num = n % 10
+	last_num = n % 10;
 	printf("Last digit of %d is", n);
 	if (n > 5)
 		printf(" %d and is greater than 5\n", last_num);
