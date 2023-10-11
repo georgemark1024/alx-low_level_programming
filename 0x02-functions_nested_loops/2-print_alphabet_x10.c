@@ -9,7 +9,7 @@ int i = 0;
  * Documentation:
  * Return: 0 for success
  */
-int 10times(void)
+int times10(void)
 {
 	for (; i <= 10; i++)
 	while (x <= 'z')
