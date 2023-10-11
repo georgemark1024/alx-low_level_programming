@@ -10,8 +10,12 @@
 int _putchar(char c);
 
 char y = 'a';
-
-int main(void)
+/**
+ * lower_alphabet - writes the alphabet in lowercase
+ * Documentation:
+ * Return: 0 for success
+ */
+int lower_alphabet(void)
 {
 	while (y <= 'z')
 	{
