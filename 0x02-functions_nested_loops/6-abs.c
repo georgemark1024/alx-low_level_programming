@@ -2,21 +2,21 @@
 
 /**
  * _abs - computes absolute value of an int
- * @int: Int to be computed
+ * @n: Int to be computed
  * Return: 0 for success
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	int x;
 
-	if (int > 0)
+	if (n > 0)
 		_putchar('n');
-	else if (int == 0)
+	else if (n == 0)
 		_putchar('0');
 	else
 	{
-		x = int * -1;
+		x = n * -1;
 		_putchar('x');
 	}
 	return (0);
