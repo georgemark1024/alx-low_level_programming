@@ -5,7 +5,7 @@
  * Documentation:
  * Return: 0 for success
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char y = 'a';
 	while (y <= 'z')
@@ -14,6 +14,5 @@ int print_alphabet(void)
 		y++;
 	}
 	_putchar('\n');
-	return (0);
 }
 
