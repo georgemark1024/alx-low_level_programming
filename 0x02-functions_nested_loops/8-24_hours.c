@@ -4,19 +4,19 @@ void jack_bauer(void)
 {
 	int w, x, y, z;
 
-	for (a = 0; a <= 2; a++)
+	for (w = 0; w <= 2; w++)
 	{
-		for (b=0; b <= 9; b++)
+		for (x=0; x <= 9; x++)
 		{
-			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+			if ((w <= 1 && w <= 9) || (w <= 2 && w <= 3))
 			{
-				for (c = 0; c <= 5; c++)
+				for (y = 0; y <= 5; y++)
 				{
-					_putchar(a + '0');
-					_putchar(b + '0');
+					_putchar(w + '0');
+					_putchar(x + '0');
 					_putchar(58);
-					_putchar(c + '0');
-					_putchar(d + '0');
+					_putchar(y + '0');
+					_putchar(z + '0');
 					_putchar('\n');
 				}
 			}
