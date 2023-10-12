@@ -8,14 +8,14 @@
 
 int _abs(int n)
 {
-	int x;
-
 	if (n > 0)
 		_putchar('n');
 	else if (n == 0)
 		_putchar('0');
 	else
 	{
+		int x;
+
 		x = n * -1;
 		_putchar('x');
 	}
