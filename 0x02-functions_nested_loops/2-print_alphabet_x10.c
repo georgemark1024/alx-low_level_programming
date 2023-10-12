@@ -1,9 +1,7 @@
-#include "main.h"
+#include"main.h"
 
 int _putchar(char c);
 
-char x = 'a';
-int i = 0;
 /**
  * 10times - prints the alphabet in lowercase 10 times
  * Documentation:
@@ -11,11 +9,16 @@ int i = 0;
  */
 int times10(void)
 {
-	for (; i <= 10; i++)
-	while (x <= 'z')
+	char x = 'a';
+	int i;
+
+	for (i = 0; i <= 10; i++)
 	{
-		_putchar(x);
+		while (x <= 'z')
+		{
+			_putchar(x);
 			x++;
+		}
 	}
 
 	return (0);
