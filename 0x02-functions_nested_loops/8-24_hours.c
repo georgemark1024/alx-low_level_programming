@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * jack_bauer - prints time
+ *
+ * Return:
+ */
 void jack_bauer(void)
 {
 	int h_10, hour_ones, minute_10, m_1;
