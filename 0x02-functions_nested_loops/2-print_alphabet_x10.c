@@ -1,7 +1,5 @@
 #include"main.h"
 
-int _putchar(char c);
-
 /**
  * print_alphabet_x10 - prints the alphabet in lowercase 10 times
  * Documentation:
