@@ -5,15 +5,13 @@
  * Return: ...
  */
 
-int _putchar(char c);
-
 void print_numbers(void)
 {
 	char i = 0;
 
 	while (i <= 9)
 	{
-		_putchar(i);
+		_putchar(i + '0');
 	}
 	_putchar('\n');
 }
