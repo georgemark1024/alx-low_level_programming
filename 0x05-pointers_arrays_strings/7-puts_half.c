@@ -18,7 +18,7 @@ void puts_half(char *str)
 	if (size % 2 != 0)
 	{
 		n = (size - 1) / 2;
-		while(*str != '\0')
+		while (*str != '\0')
 		{
 			str++;
 			if (*str >= (n + 1))
