@@ -21,8 +21,8 @@ void puts_half(char *str)
 		while(*str != '\0')
 		{
 			str++;
-			if (str >= (n + 1))
-				_putchar(str);
+			if (*str >= (n + 1))
+				_putchar(*str);
 		}
 	}
 	else
@@ -31,8 +31,8 @@ void puts_half(char *str)
 		while (*str != '\0')
 		{
 			str++;
-			if (str >= n)
-				_putchar(str);
+			if (*str >= n)
+				_putchar(*str);
 		}
 	}
 }
