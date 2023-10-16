@@ -13,9 +13,8 @@ void print_array(int *a, int n)
 
 	while (x <= n)
 	{
-		_putchar(a[x]);
-		_putchar(',');
-		_putchar(' ');
+		printf("%lu, ",a[x]);
 		x++;
 	}
+	printf("\n");
 }
