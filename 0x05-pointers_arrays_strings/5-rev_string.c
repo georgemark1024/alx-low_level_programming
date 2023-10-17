@@ -11,8 +11,7 @@ void rev_string(char *s)
 	int length = 0;
 	int x = 0;
 	int i;
-	char* y;
-	char* *y;
+	char y[];
 
 	while (s[length] != '\0')
 	{
@@ -21,7 +20,8 @@ void rev_string(char *s)
 	for (i = length - 1; i >= 0; i--)
 	{
 		y[x++] = (s[i]);
+		if (i == 0)
+			return (y);
 	}
-	s = *y
 	_putchar('\n');
 }
