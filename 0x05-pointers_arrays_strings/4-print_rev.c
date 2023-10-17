@@ -8,13 +8,20 @@
 
 void print_rev(char *s)
 {
-	while (*s != '\0')
-	{
-		s++;
-	}
-	while (*s <= '\0')
+	pusher(*s)
 	{
 		_putchar(*s);
 		s--;
 	}
+}
+
+/**
+ * pusher - pushes to the last char
+ * @g: string pointer
+ * Return: void
+ */
+void pusher(char *g)
+{
+	while (*g != '\0')
+		s++;
 }
