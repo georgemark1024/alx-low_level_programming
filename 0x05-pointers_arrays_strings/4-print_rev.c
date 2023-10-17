@@ -6,24 +6,6 @@
  * Return: void
  */
 
-/**
- *void print_rev(char *s)
- *{
- *	while (*s != '\0')
- *	{
- *		s++;
- *		if (*s == '\0')
- *		{
- *			while (*s != '\0')
- *			{
- *				s--;
- *				_putchar(*s);
- *			}
- *		}
- *	}
- *}
- */
-
 void print_rev(char *s)
 {
 	int length = 0;
