@@ -17,9 +17,10 @@ void puts_half(char *str)
 	if (size % 2 != 0)
 	{
 		n = (size - 1) / 2;
-		for (; n <= size; n++)
+		while (n <= size)
 		{
-			_putchar(str[n + 1]);
+			n++;
+			_putchar(str[n]);
 		}
 	}
 	else
