@@ -1,36 +1,63 @@
 #include "main.h"
+/**
+ * _strcat - concatenates two strings
+ * @dest: destination str
+ * @src: source str
+ * Return: pointer to des
+ t
+ */
 
 char *_strcat(char *dest, char *src)
 {
-	int size = 0, sum;
-	int size2 = 0;
-	int count = 0;
-	int n_count = 0;
+	int size;
+	int counter = 0;
+	int src_counter = 0;
 	char concat[];
 
-	while (dest[size] != '\0')
+	size = tot_size(dest, src) + 1;
+	while (counter < size)
 	{
-		size++;
+		concat[counter] == dest[counter];
+		counter++;
+		if (dest[counter] == '\0')
+		{
+			continue;
+			counter++;
+			while (counter < size)
+			{
+				concat[counter] == src[src_counter];
+				counter++;
+				src_counter++;
+			}
+		}
 	}
-	while (src[size2] != '\0')
-	{
-		size2++;
-	}
+	concat[size] = '\0';
+	dest = concat;
+	return (dest)
+}
+/**
+ * tot_size - computes the total size of two srings
+ * @dest: string 1
+ * @src: string 2
+ * Return: total size
+ */
 
-	sum = size + size2;
-	concat[sum + 1];
+
+int tot_size(char *dest, char *src)
+{
+	int size, size1, size2;
+	int count = 0;
+
 	while (dest[count] != '\0')
 	{
-		concat[count] == dest[count];
+		size1++;
 		count++;
 	}
-	while (count <= sum + 1)
+	while (src[count] != '\0')
 	{
-		concat[count] == src[n_count];
+		size2++;
 		count++;
-		n_count++;
 	}
-	concat[sum + 1] == '\0';
-	dest = concat;
-	return (&dest);
+	size = size1 + size2;
+	return (size);
 }
