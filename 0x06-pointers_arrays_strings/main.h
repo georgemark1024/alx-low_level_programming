@@ -3,4 +3,4 @@
 
 char *_strcat(char *dest, char *src);
 int tot_size(char *dest, char *src);
-
+#endif

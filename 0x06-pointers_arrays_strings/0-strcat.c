@@ -9,55 +9,43 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int size;
-	int counter = 0;
-	int src_counter = 0;
-	char concat[];
+	int tot_size, i = 0, j = 0;
 
-	size = tot_size(dest, src) + 1;
-	while (counter < size)
+	tot_size = size(dest) + size(src) + 1;
+
+	char concat[tot_size];
+	
+	while (dest[i] != '\0')
 	{
-		concat[counter] == dest[counter];
-		counter++;
-		if (dest[counter] == '\0')
-		{
-			continue;
-			counter++;
-			while (counter < size)
-			{
-				concat[counter] == src[src_counter];
-				counter++;
-				src_counter++;
-			}
-		}
+		concat[j] = dest[i];
+		i++;
+		j++;
 	}
-	concat[size] = '\0';
-	dest = concat;
-	return (dest)
+	i = 0;
+	while(src[i] != '\0')
+	{
+		concat[j] = src[i];
+		i++;
+		j++;
+	}
+	concat[tot_size] = '\0';
+	return (concat);
 }
 /**
- * tot_size - computes the total size of two srings
- * @dest: string 1
- * @src: string 2
- * Return: total size
+ * tot_size - computes the size of a srings
+ * @str_ptr: pointer to first char of a string str_ptr
+ * Return: size
  */
 
 
-int tot_size(char *dest, char *src)
+int size(char *str_ptr)
 {
-	int size, size1, size2;
-	int count = 0;
+	int size = 0;
 
-	while (dest[count] != '\0')
+	while (*str_ptr != '\0')
 	{
-		size1++;
-		count++;
+		str_ptr++;
+		size++;
 	}
-	while (src[count] != '\0')
-	{
-		size2++;
-		count++;
-	}
-	size = size1 + size2;
 	return (size);
 }
