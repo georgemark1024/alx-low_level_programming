@@ -8,11 +8,16 @@
 
 char *cap_string(char *str)
 {
-	for (int i = 0; str[i] != '\0'; i++)
+	int i = 0;
+
+	for (; str[i] != '\0'; i++)
 	{
 		if (is_a_sep(str[i]) == 1)
 		{
-			str[i + 1] = str[i + 1] - 32;
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
+				str[i + 1] = str[i + 1] - 32;
+			}
 		}
 	}
 	return (str);
@@ -29,12 +34,13 @@ int is_a_sep(char c)
 	int i = 0;
 	char sep[14] = {' ','\t','\n',',',';','.','!','?','"','(',')','{','}'};
 
-	while (sep[i] != '\0')
+	while (i < 14)
 	{
 		if (c == sep[i])
+		{
 			return (1);
-		else
-			return (0);
+		}
 		i++;
 	}
+	return (0);
 }
