@@ -10,20 +10,19 @@
 
 void reverse_array(int *a, int n)
 {
-	while (n >= 0)
-	{
-		_putchar(a[n]);
-		n--;
-	}
-}
-/** _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return:; On success 1
- * On error. -1 is returned, and errno is set appropriately
- */
+	int i = 0;
+	int end = n - 1;
+	int copy[13];
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
+	for (; i < n; i++)
+	{
+		copy[i] = a[i];
+	}
+	i = 0;
+	while (end >= 0)
+	{
+		a[i] = copy[end];
+		i++;
+		end--;
+	}
 }
