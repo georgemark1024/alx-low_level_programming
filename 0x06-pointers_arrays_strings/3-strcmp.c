@@ -17,7 +17,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			return (s2[pos] - s2[pos]);
 		}
-		i++;
+		pos++;
 	}
 	return (0);
 
