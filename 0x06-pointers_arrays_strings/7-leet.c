@@ -8,6 +8,7 @@
 
 char *leet(char *str)
 {
+	char copy[67];
 	int i = 0;
 	char lower[6] = {'a', 'e', 'o', 't', 'l'};
 	char upper[6] = {'A', 'E', 'O', 'T', 'L'};
@@ -15,11 +16,18 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (str[i] == lower[i] || str[i] == upper[i])
+		copy[i] = str[i];
+		i++;
+	}
+	copy[i] = '\0';
+	i = 0;
+	while (copy[i] != '\0')
+	{
+		if (copy[i] == lower[i] || copy[i] == upper[i])
 		{
-			str[i] = nos[i];
+			copy[i] = nos[i + '0'];
 		}
 		i++;
 	}
-	return (str);
+	return (copy);
 }
