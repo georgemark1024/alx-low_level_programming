@@ -22,10 +22,6 @@ char *_strstr(char *haystack, char *needle)
 			{
 				return (haystack + count - i);
 			}
-			if (haystack[count] == '\0')
-			{
-				return (NULL);
-			}
 			count++;
 			i++;
 
