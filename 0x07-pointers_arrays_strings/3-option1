@@ -1,0 +1,28 @@
+unsigned int _strspn(char *s, char *accept)
+{
+    unsigned int count = 0;
+
+    while (s[count] != '\0')
+    {
+        int i = 0;
+        while (accept[i] != '\0')
+        {
+            if (s[count] == accept[i])
+            {
+                // Continue checking the next character in s
+                break;
+            }
+            i++;
+        }
+
+        // If we reached the end of accept without a match, return the count
+        if (accept[i] == '\0') {
+            return count;
+        }
+
+        count++;
+    }
+
+    return count;
+}
+
