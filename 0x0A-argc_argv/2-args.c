@@ -4,7 +4,7 @@
  * main - prints all the arguments it receives
  * @argc: number of elements in argv or the numebr of arguments
  * passed to the program including the program name
- * @agrv: array containing arguments passed to the command line
+ * @argv: array containing arguments passed to the command line
  * Return: 0 on success, otherwise on failure
  */
 
