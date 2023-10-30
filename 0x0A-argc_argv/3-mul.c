@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /**
  * main - prints the results of a multiplication between 2 nos
@@ -9,14 +10,16 @@
 
 int main(int argc, char **argv)
 {
-	int res;
+	int res, num1, num2;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
-	res = (int)argv[1] * (int)argv[2];
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	res = num1 * num2;
 	printf("%d\n", res);
 	return (0);
 }
