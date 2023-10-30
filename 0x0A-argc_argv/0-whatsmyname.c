@@ -3,7 +3,7 @@
 /**
  * main - prints the name of the program and a new line
  * @agrc: length of array argv
- * @argv: array containing arguments passed to the command line
+ * @agrv: array containing arguments passed to the command line
  * Return: 0 on zero success
  */
 
