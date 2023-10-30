@@ -7,11 +7,11 @@
  * Return: 0 on success, otherwise on error
  */
 
-int main(__attribute__((unused))int argc, char **argv)
+int main(int argc, __attribute__((unused))char **argv)
 {
 	int arg_number;
 
 	arg_number = argc - 1;
-	printf("%d", arg_number);
+	printf("%d\n", arg_number);
 	return (0);
 }
