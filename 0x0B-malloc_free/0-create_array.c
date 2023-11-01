@@ -18,7 +18,11 @@ char *create_array(unsigned int size, char c);
 		return (NULL);
 	}
 	str = (char *)malloc(size);
-	str[0] = c;
+	while (str[i] != '\0')
+	{
+		str[i] == c;
+		i++;
+	}
 	if (str == NULL)
 	{
 		return (NULL);
