@@ -20,9 +20,9 @@ char *create_array(unsigned int size, char c)
 	}
 	str = (char *)malloc(size);
 	if (str == NULL)
-        {
-                return (NULL);
-        }
+	{
+		return (NULL);
+	}
 	for (; i < size; i++)
 	{
 		str[i] = c;
