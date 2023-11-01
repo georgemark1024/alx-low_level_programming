@@ -9,7 +9,7 @@
  * Return: array
  */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *str;
 
