@@ -19,16 +19,13 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	str = (char *)malloc(size);
+	if (str == NULL)
+        {
+                return (NULL);
+        }
 	for (; i < size; i++)
 	{
 		str[i] = c;
 	}
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		return (str);
-	}
+	return (str);
 }
