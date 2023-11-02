@@ -1,5 +1,4 @@
 #include"main.h"
-#include<stdio.h>
 #include<stdlib.h>
 
 /**
@@ -11,5 +10,16 @@
 
 void free_grid(int **grid, __attribute__((unused))int height)
 {
+	if (grid == NULL)
+	{
+		return;
+	}
+	for (int row = 0; row < height; row++)
+	{
+		if (grid[row] != NULL)
+		{
+			free(grid[row]);
+		}
+	}
 	free(grid);
 }
