@@ -10,11 +10,13 @@
 
 void free_grid(int **grid, __attribute__((unused))int height)
 {
+	int row;
+
 	if (grid == NULL)
 	{
 		return;
 	}
-	for (int row = 0; row < height; row++)
+	for (row = 0; row < height; row++)
 	{
 		if (grid[row] != NULL)
 		{
