@@ -1,6 +1,7 @@
 #include"main.h"
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 /**
  * _strdup - returns a pointer to new memory
@@ -13,8 +14,8 @@ char *_strdup(char *str)
 	char *str_cpy;
 	unsigned long int i = 0;
 
-	str_cpy = (char *)malloc(_strlen(str));
-	if (str_cpy == NULL || _strlen(str_cpy) < _strlen(str))
+	str_cpy = (char *)malloc(strlen(str));
+	if (str_cpy == NULL || strlen(str_cpy) < strlen(str))
 	{
 		return (NULL);
 	}
