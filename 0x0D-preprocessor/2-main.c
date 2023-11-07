@@ -2,7 +2,12 @@
 #define FILE_H
 #include <stdio.h>
 
-int main()
+/**
+ * main - prints file name followed by a new line
+ * Return: 0 on success
+ */
+
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
