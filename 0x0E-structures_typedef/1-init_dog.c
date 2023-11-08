@@ -1,5 +1,8 @@
 #ifndef INIT_H
 #define INIT_H
+#include<stdlib.h>
+#include<stddef.h>
+#include "dog.h"
 
 /*
  * init_dog - initializes and object of type struct dog with given input
@@ -11,13 +14,12 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d = malloc(sizeof(struct dog));
-	if (d == NULL)
+	if (d != NULL)
 	{
-		break;
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
 	}
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
 }
 
 #endif
