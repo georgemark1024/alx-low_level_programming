@@ -1,6 +1,13 @@
 #ifndef INIT_H
 #define INIT_H
 
+/*
+ * init_dog - initializes and object of type struct dog with given input
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dogs owner
+ */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d = malloc(sizeof(struct dog));
