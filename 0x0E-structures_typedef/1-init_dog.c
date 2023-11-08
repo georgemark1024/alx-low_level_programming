@@ -2,6 +2,7 @@
 #define INIT_H
 #include<stdlib.h>
 #include<stddef.h>
+#include "main.h"
 #include "dog.h"
 
 /*

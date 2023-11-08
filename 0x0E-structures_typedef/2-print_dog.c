@@ -1,6 +1,7 @@
 #ifndef PRINT_H
 #define PRINT_H
 #include "dog.h"
+#include "main.h"
 
 void print_dog(struct dog *d)
 {
