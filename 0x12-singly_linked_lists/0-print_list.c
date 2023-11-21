@@ -3,7 +3,7 @@
 
 /**
  * print_list - prints the contents of a singly linked lists
- * h: pointer to a list node of data struct
+ * @h: pointer to a list node of data struct
  * Return: number of nodes, type unsigned int
  */
 
