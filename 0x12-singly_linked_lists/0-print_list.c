@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 	list_t *next_ptr;
 	size_t sum_node = 0;
 
-	if (h->next == NULL)
+	if (h == NULL)
 	{
 		printf("[%lu] (nil)", sum_node);
 		return (sum_node);
