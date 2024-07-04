@@ -8,18 +8,18 @@
 
 int is_a_sep(char c)
 {
-        int i = 0;
-        char sep[14] = {' ','\t','\n',',',';','.','!','?','"','(',')','{','}'};
+	int i = 0;
+	char sep[13] = " \t\n,;.!?\"(){}";
 
-        while (i < 14)
-        {
-                if (c == sep[i])
-                {
-                        return (1);
-                }
-                i++;
-        }
-        return (-1);
+	while (i < 14)
+	{
+		if (c == sep[i])
+		{
+			return (1);
+		}
+		i++;
+	}
+	return (-1);
 }
 
 /**

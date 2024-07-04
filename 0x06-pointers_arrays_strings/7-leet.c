@@ -19,6 +19,7 @@ char *leet(char *str)
 	for (i = 0; i < size; i++)
 	{
 		int y = 0;
+
 		for (; y < 5; y++)
 		{
 			if (str[i] == lower[y] || str[i] == upper[y])

@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 		if (res == 0)
 			continue;
 		else
-			return res;
+			return (res);
 	}
 	return (0);
 
