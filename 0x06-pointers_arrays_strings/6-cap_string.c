@@ -19,7 +19,7 @@ int is_a_sep(char c)
 		}
 		i++;
 	}
-	return (-1);
+	return (0);
 }
 
 /**
