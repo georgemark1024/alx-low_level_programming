@@ -1,3 +1,4 @@
+#include<string.h>
 #include "main.h"
 
 /**
@@ -8,26 +9,25 @@
 
 char *leet(char *str)
 {
-	char copy[67];
-	int i = 0;
-	char lower[6] = {'a', 'e', 'o', 't', 'l'};
-	char upper[6] = {'A', 'E', 'O', 'T', 'L'};
-	int nos[5] = {4, 3, 0, 7, 1};
+	char lower[5] = "aeotl";
+	char upper[5] = "AEOTL";
+	char nos[5] = "43071";
+	int i, size;
 
-	while (str[i] != '\0')
+	size = strlen(str);
+
+	for (i = 0; i < size; i++)
 	{
-		copy[i] = str[i];
-		i++;
-	}
-	copy[i] = '\0';
-	i = 0;
-	while (copy[i] != '\0')
-	{
-		if (copy[i] == lower[i] || copy[i] == upper[i])
+		int y = 0;
+		for (; y < 5; y++)
 		{
-			copy[i] = nos[i + '0'];
+			if (str[i] == lower[y] || str[i] == upper[y])
+			{
+				str[i] = nos[y];
+			}
 		}
-		i++;
 	}
-	return (copy);
+
+
+	return (str);
 }

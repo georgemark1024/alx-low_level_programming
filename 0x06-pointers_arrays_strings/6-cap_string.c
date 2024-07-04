@@ -1,6 +1,28 @@
 #include "main.h"
 
 /**
+ * is_a_sep - checks if a character is a separator
+ * @c: character
+ * Return: 1 if a separator, 0 if not a separator
+ */
+
+int is_a_sep(char c)
+{
+        int i = 0;
+        char sep[14] = {' ','\t','\n',',',';','.','!','?','"','(',')','{','}'};
+
+        while (i < 14)
+        {
+                if (c == sep[i])
+                {
+                        return (1);
+                }
+                i++;
+        }
+        return (-1);
+}
+
+/**
  * cap_string - capitalises letters in a string that come after a separator
  * @str: string to be checked
  * Return: string
@@ -21,26 +43,4 @@ char *cap_string(char *str)
 		}
 	}
 	return (str);
-}
-
-/**
- * is_a_sep - checks if a character is a separator
- * @c: character
- * Return: 1 if a separator, 0 if not a separator
- */
-
-int is_a_sep(char c)
-{
-	int i = 0;
-	char sep[14] = {' ','\t','\n',',',';','.','!','?','"','(',')','{','}'};
-
-	while (i < 14)
-	{
-		if (c == sep[i])
-		{
-			return (1);
-		}
-		i++;
-	}
-	return (0);
 }
